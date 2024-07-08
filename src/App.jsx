@@ -28,6 +28,9 @@ function App() {
     if (todos && todos.length > 0) {
       setTodos(todos);
     }
+    else {
+      setTodos([]); // Initialize todos as an empty array if you want it on page refresh, otherwise remove the else statement from the code
+    }
   }, []);
 
   useEffect(() => {
